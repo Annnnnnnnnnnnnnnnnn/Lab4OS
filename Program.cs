@@ -63,7 +63,7 @@ namespace Lab4OS
 
         }
 
-        public static void ChangeCol(int[][] matrix, int cols)
+        public static void ChangeByDiagonal(int[][] matrix, int cols)
         {
             for (int k = 1; k < cols - 1; k++)
             {
@@ -162,7 +162,7 @@ namespace Lab4OS
             Console.WriteLine("Початкова матриця");
             PrintMatr(Matrix);
             Console.WriteLine();
-            ChangeCol(Matrix, 5);
+            ChangeByDiagonal(Matrix, 5);
             Console.WriteLine();
             Console.ReadKey();
         }
